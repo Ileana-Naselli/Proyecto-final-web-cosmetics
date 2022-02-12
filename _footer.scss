@@ -18,7 +18,7 @@
     }
 }
 
-    @media screen and (max-width: 768px)  {
+    @media screen and (mix-width: 426px), (max-width: 768px)  {
         #footer{
             background-image: url("../img/footer-mobile.jpg");
             padding-left:130px;
@@ -29,4 +29,16 @@
             background-color: rgba(255, 255, 255, 0.397);
           }
         }
+
+        @media screen and (max-width: 425px)  {
+            #footer{
+                padding-left:40px;
+
+                p{
+                    font-size:1.2rem;
+                }
+              }
+
+            }
+
 }

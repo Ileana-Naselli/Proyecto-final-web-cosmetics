@@ -30,7 +30,7 @@ html {
 body {
   background-color: white;
   font-family: "Roboto", sans-serif;
-  padding: 1rem;
+  width: 100%;
 }
 
 h2 {
@@ -59,7 +59,8 @@ p {
   font-size: 1.5rem;
 }
 
-a:visited{
+a:visited, a:link, a:hover, a:active
+{
     color: #000000;
     text-decoration: none;
 }
@@ -129,29 +130,29 @@ a:visited{
   justify-content: center;
   padding: 2rem;
   align-items: baseline;
-}
-.packs h3 {
-  font-size: 4rem;
-}
-.packs .packs--masvendidos img {
-  padding-top: 3rem;
-}
-.packs .packs--giftboxes {
-  padding: 2rem;
-}
-.packs .packs--boxes {
+
+  h3 {
+  font-size: 4rem;}
+
+ img {
+  padding-top: 3rem;}
+
+.packs--giftboxes {
+  padding: 2rem;}
+
+.packs--boxes {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 2rem;
-}
-.packs .boxes--card {
-  padding: 1rem;
-}
+  padding: 2rem;}
+.boxes--card {
+  padding: 1rem;}
+
 @media screen and (max-width: 768px) {
-  .packs .packs--masvendidos img {
-    width: 100%;
-  }
+   img {
+    width: 100%;}
+}
+
 }
 
 .oferta {
@@ -204,9 +205,12 @@ a:visited{
   display: grid;
   grid-row-gap: 2rem;
   grid-column-gap: 2rem;
-  grid-template-areas: "news2 news3 news4" "news5 news5 news5";
+  grid-template-areas: 
+  "news2 news3 news4" 
+  "news5 news5 news5";
   margin-bottom: 2.5rem;
   padding: 0 10rem 0 10rem;
+
 }
 .news .news2 {
   grid-area: news2;

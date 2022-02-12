@@ -8,6 +8,10 @@
   padding-top: 40%;
   width: 100%;
 }
+#header a:visited, #header a:link, #header a:hover, #header a:active {
+  color: #000000;
+  text-decoration: none;
+}
 #header h1 {
   font-size: 7em;
   text-align: center;
@@ -39,6 +43,7 @@
   #header {
     padding-top: 50%;
     background-image: url("../img/header-mobile.jpg");
+    width: 100%;
   }
   #header h1 {
     font-size: 4em;
@@ -117,7 +122,7 @@ html {
 body {
   background-color: white;
   font-family: "Roboto", sans-serif;
-  padding: 1rem;
+  width: 100%;
 }
 
 h2 {
@@ -146,7 +151,7 @@ p {
   font-size: 1.5rem;
 }
 
-a:visited {
+a:visited, a:link, a:hover, a:active {
   color: #000000;
   text-decoration: none;
 }
@@ -221,35 +226,30 @@ a:visited {
   padding: 2rem;
   align-items: baseline;
 }
-
 .packs h3 {
   font-size: 4rem;
 }
-
-.packs .packs--masvendidos img {
+.packs img {
   padding-top: 3rem;
 }
-
 .packs .packs--giftboxes {
   padding: 2rem;
 }
-
 .packs .packs--boxes {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 2rem;
 }
-
 .packs .boxes--card {
   padding: 1rem;
 }
-
 @media screen and (max-width: 768px) {
-  .packs .packs--masvendidos img {
+  .packs img {
     width: 100%;
   }
 }
+
 .oferta {
   color: #ffffff;
   font-family: "Arima Madurai", cursive;

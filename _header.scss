@@ -5,6 +5,11 @@
     background-size: contain;
     padding-top:40%;
     width: 100%;
+
+    a:visited, a:link, a:hover, a:active{
+    color: #000000;
+    text-decoration: none;
+}
     
     h1{
         font-size:7em;
@@ -38,6 +43,7 @@
      @media screen and (max-width: 768px)  {
             padding-top:50%;
             background-image: url("../img/header-mobile.jpg");
+            width: 100%;
 
 
         h1{

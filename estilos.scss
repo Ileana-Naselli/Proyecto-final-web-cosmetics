@@ -30,7 +30,7 @@ html {
 body {
   background-color: white;
   font-family: "Roboto", sans-serif;
-  width: 100%;
+  width: auto;
 }
 
 h2 {
@@ -251,38 +251,38 @@ a:visited, a:link, a:hover, a:active
 .formulario {
   background-color: black;
   color: white;
-  width: 30rem;
-  padding: 1rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
   border-radius: 15px 50px;
-}
-@media screen and (max-width: 768px) {
-  .formulario {
-    width: 80%;
-  }
-}
+  align-items: center;
 
-form {
+  form {
   padding: 1rem;
   font-size: 1.5rem;
-}
-form label {
-  padding-right: 1rem;
-}
-form .formulario--text {
+
+    label {
+  padding-right: 1rem;}
+
+  .formulario--text {
   padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: start;
 }
-form .anotame {
+.anotame {
   background-color: #C195D6;
   font-size: 1.5rem;
-  border-style: none;
+  border-style: none;}
+}
+
+@media screen and (max-width: 768px) {
+  .formulario {
+    width: 80%;}
+}
 }
 
 .product {
@@ -371,47 +371,57 @@ form .anotame {
   }
 }
 /*BLOG*/
+
 .blog {
   display: grid;
   grid-column-gap: 3rem;
-  grid-template-areas: "h3 h3" "blog-image blog-titular" "blog-image blog-cuerpo" "blog-image blog-cuerpo";
+  grid-template-areas: 
+  "h3 h3" 
+  "blog-image blog-titular" 
+  "blog-image blog-cuerpo"
+"blog-image blog-cuerpo";
   margin: 0 0 10rem 0;
   padding-left: 3rem;
   align-content: center;
-}
-.blog h3 {
-  font-size: 4rem;
-}
-.blog h4 {
+
+   h3 {
+  font-size: 4rem;}
+
+   h4 {
   font-size: 3rem;
   font-family: "Arima Madurai", cursive;
   font-weight: 900;
-  color: #b796ca;
-}
-.blog h5 {
-  font-size: 2rem;
-}
-.blog h6 {
+  color: #b796ca;}
+
+  h5 {
+  font-size: 2rem;}
+
+  h6 {
   font-size: 1.2em;
-  color: #535353;
+  color: #535353;}
+
+ .blog-titular {
+  grid-area: blog-titular;}
+
+ .blog-image {
+  grid-area: blog-image;}
+  .blog-cuerpo {
+  grid-area: blog-cuerpo;}
 }
-.blog .blog-titular {
-  grid-area: blog-titular;
-}
-.blog .blog-image {
-  grid-area: blog-image;
-}
-.blog .blog-cuerpo {
-  grid-area: blog-cuerpo;
+@media screen and (max-width: 768px) {
+    .blog {
+      grid-template-areas: 
+      "h3" "blog-titular" 
+      "blog-image" 
+      "blog-cuerpo";
+      margin-bottom: 2.5rem;
+      padding: 3rem;
+    }
+
 }
 
-@media screen and (max-width: 768px) {
-  .blog {
-    grid-template-areas: "h3" "blog-titular" "blog-image" "blog-cuerpo";
-    margin-bottom: 2.5rem;
-    padding: 3rem;
-  }
-}
+
+
 /*PREGUNTAS FRECUENTES*/
 .preguntas h3 {
   font-size: 3rem;

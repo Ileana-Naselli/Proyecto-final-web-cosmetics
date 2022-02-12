@@ -2,7 +2,6 @@
     margin-top:2rem;
     background-image: url("../img/footer.jpg");
     background-repeat:no-repeat;
-    padding-left:150px;
 
     .footer--sections{
         display:flex;
@@ -18,7 +17,7 @@
     }
 }
 
-    @media screen and (mix-width: 426px), (max-width: 768px)  {
+    @media screen and (max-width: 768px)  {
         #footer{
             background-image: url("../img/footer-mobile.jpg");
             padding-left:130px;

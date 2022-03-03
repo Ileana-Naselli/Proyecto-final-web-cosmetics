@@ -250,6 +250,9 @@ a:visited, a:link, a:hover, a:active {
 .packs .boxes--card {
   padding: 1rem;
 }
+.packs .boxes--card h4 {
+  font-size: 3rem;
+}
 @media screen and (max-width: 768px) {
   .packs img {
     width: 100%;
@@ -267,8 +270,8 @@ a:visited, a:link, a:hover, a:active {
   position: relative;
   -webkit-animation-name: oferta;
   animation-name: oferta;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -297,7 +300,7 @@ a:visited, a:link, a:hover, a:active {
 
 @media screen and (max-width: 768px) {
   .testimonios {
-    background: linear-gradient(63deg, #6d6d6d 15%, rgba(62, 155, 74, 0.886) 40%, rgba(125, 3, 129, 0.886) 100%);
+    background: linear-gradient(63deg, #6d6d6d 15%, rgba(120, 93, 150, 0.886) 40%, rgba(125, 3, 129, 0.886) 100%);
   }
 
   .testimonios h4, .testimonios p {
@@ -355,6 +358,7 @@ a:visited, a:link, a:hover, a:active {
 }
 .formulario {
   background-color: black;
+  background: linear-gradient(63deg, rgba(0, 0, 0, 0.886) 30%, rgba(85, 85, 85, 0.886) 60%, rgba(0, 0, 0, 0.886) 100%);
   color: white;
   width: 100%;
   display: flex;
@@ -362,7 +366,6 @@ a:visited, a:link, a:hover, a:active {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
-  border-radius: 15px 50px;
   align-items: center;
 }
 .formulario form {
@@ -386,13 +389,10 @@ a:visited, a:link, a:hover, a:active {
 @media screen and (max-width: 768px) {
   .formulario .formulario {
     width: 80%;
+    border-radius: none;
   }
 }
 
-.product {
-  padding: 2rem;
-  margin: 0 10rem 0;
-}
 .product h4 {
   font-size: 2rem;
 }
@@ -407,6 +407,8 @@ a:visited, a:link, a:hover, a:active {
 .product .product--thumb {
   display: inline-block;
   padding: 1rem;
+  max-width: 270px;
+  margin: 0 1.5rem 0 1.5rem;
 }
 .product .product--thumb:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -479,7 +481,6 @@ a:visited, a:link, a:hover, a:active {
   display: grid;
   grid-column-gap: 3rem;
   grid-template-areas: "h3 h3" "blog-image blog-titular" "blog-image blog-cuerpo" "blog-image blog-cuerpo";
-  margin: 0 10rem 0;
   padding-left: 3rem;
   align-content: center;
   max-width: 1500px;
@@ -520,6 +521,7 @@ a:visited, a:link, a:hover, a:active {
 /*PREGUNTAS FRECUENTES*/
 .preguntas {
   margin: 0 10rem 0;
+  max-width: 1000px;
 }
 .preguntas h3 {
   font-size: 3rem;
@@ -542,6 +544,11 @@ a:visited, a:link, a:hover, a:active {
 .preguntas .preguntas-respuesta {
   font-style: italic;
 }
+@media screen and (max-width: 768px) {
+  .preguntas {
+    margin: 1rem;
+  }
+}
 
 /*VENTA MAYORISTA*/
 .mayorista-section {
@@ -556,6 +563,12 @@ a:visited, a:link, a:hover, a:active {
 .mayorista-section div {
   padding-left: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .mayorista-section {
+    margin: 0.5rem;
+    flex-direction: column;
+  }
+}
 
 /*MIXIN*/
 .mayorista-kit {
@@ -567,14 +580,15 @@ a:visited, a:link, a:hover, a:active {
 
 /*ERROR 404*/
 .error {
-  text-align: center;
-  background-color: #ffffff;
   background-image: url("../img/fondo-404.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  align-content: center;
+  text-align: center;
+  background-color: #ffffff;
   height: 100%;
   padding: 10em;
+  width: 100%;
+  max-width: 1024px;
 }
 .error h2 {
   font-size: 30em;

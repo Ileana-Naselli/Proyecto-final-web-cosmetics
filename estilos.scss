@@ -43,8 +43,7 @@ h3 {
   font-family: "Arima Madurai", cursive;
   font-weight: 900;
   font-size: 5rem;
-  padding: 2rem;
-  
+  padding: 2rem; 
 }
 
 h4 {
@@ -64,8 +63,8 @@ p {
 
 a:visited, a:link, a:hover, a:active
 {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }
 
 .fast-menu {
@@ -150,13 +149,15 @@ a:visited, a:link, a:hover, a:active
   flex-wrap: wrap;
   padding: 2rem;}
 .boxes--card {
-  padding: 1rem;}
+  padding: 1rem;
 
-@media screen and (max-width: 768px) {
-   img {
-    width: 100%;}
+h4{
+  font-size:3rem}
 }
-
+@media screen and (max-width: 768px) {
+  img {
+   width: 100%;}
+ }
 }
 
 .oferta {
@@ -170,8 +171,8 @@ a:visited, a:link, a:hover, a:active
   position: relative;
   -webkit-animation-name: oferta;
           animation-name: oferta;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -197,7 +198,7 @@ a:visited, a:link, a:hover, a:active
 }
 @media screen and (max-width: 768px) {
   .testimonios {
-    background: linear-gradient(63deg, #6d6d6d 15%, rgba(62, 155, 74, 0.886) 40%, rgba(125, 3, 129, 0.886) 100%);
+    background: linear-gradient(63deg, #6d6d6d 15%, rgba(120, 93, 150, 0.886) 40%, rgba(125, 3, 129, 0.886) 100%);
   }
   .testimonios h4, .testimonios p {
     color: white;
@@ -257,6 +258,7 @@ a:visited, a:link, a:hover, a:active
 
 .formulario {
   background-color: black;
+  background: linear-gradient(63deg,rgba(0, 0, 0, 0.886) 30%, rgba(85, 85, 85, 0.886) 60%, rgba(0, 0, 0, 0.886) 100% );
   color: white;
   width: 100%;
   display: flex;
@@ -264,7 +266,6 @@ a:visited, a:link, a:hover, a:active
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
-  border-radius: 15px 50px;
   align-items: center;
 
   form {
@@ -288,14 +289,16 @@ a:visited, a:link, a:hover, a:active
 
 @media screen and (max-width: 768px) {
   .formulario {
-    width: 80%;}}
+    width: 80%;
+    border-radius:none;
+  }
+  }
 }
 
 .product {
-  padding: 2rem;
-  margin: 0 10rem 0;
   h4 {
   font-size: 2rem;}
+
    .product--promo {
     background-color: #C195D6;
     padding: 2rem;}
@@ -305,11 +308,14 @@ a:visited, a:link, a:hover, a:active
    .product--thumb {
     display: inline-block;
     padding: 1rem;
+    max-width: 270px;
+    margin: 0 1.5rem 0 1.5rem;
     &:hover {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);} 
     img {
       box-shadow: 0 0.5rem 0.8rem 0 rgba(0, 0, 0, 0.2);
-     border-radius: 0 0rem 0rem 6rem;}
+     border-radius: 0 0rem 0rem 6rem;
+}
     }
    .product .product--thumb .product-related {
     display: flex;}
@@ -381,7 +387,6 @@ a:visited, a:link, a:hover, a:active
   "blog-image blog-titular" 
   "blog-image blog-cuerpo"
   "blog-image blog-cuerpo";
-  margin: 0 10rem 0;
   padding-left: 3rem;
   align-content: center;
   max-width: 1500px;
@@ -419,13 +424,14 @@ a:visited, a:link, a:hover, a:active
       margin-bottom: 2.5rem;
       padding: 3rem;
     }
-
 }
 
 
 /*PREGUNTAS FRECUENTES*/
 .preguntas{
   margin: 0 10rem 0;
+  max-width: 1000px;
+
 h3 {
   font-size: 3rem;
 }
@@ -447,6 +453,10 @@ h5 {
 }
 .preguntas-respuesta {
   font-style: italic;}
+
+  @media screen and (max-width: 768px)  {
+    margin:1rem;
+  }
 }
 
 /*VENTA MAYORISTA*/
@@ -459,7 +469,12 @@ h5 {
   font-family: Arima Madurai;
 }
 div {
-  padding-left: 1rem;
+  padding-left: 1rem;}
+
+@media screen and (max-width: 768px)  {
+  margin:0.5rem;
+  flex-direction: column;
+
 }
 }
 
@@ -473,15 +488,16 @@ div {
 
 /*ERROR 404*/
 .error{
-    text-align: center;
-    background-color: #ffffff;
-    background-image: url("../img/fondo-404.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    align-content: center;
-    height:100%;
-    padding:10em;
-
+   background-image: url("../img/fondo-404.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-align: center;
+      background-color: #ffffff;
+      height:100%;
+      padding:10em;
+      width: 100%;
+      max-width: 1024px;
+      
 h2 {
     font-size:30em;
     color: rgba(245, 245, 220, 0.418);
@@ -498,8 +514,6 @@ p, h3{
     h2{
         font-size:10em;}
     p{
-        font-size:2em;  
+        font-size:2em;}
     }
-}
-
-}
+  }
